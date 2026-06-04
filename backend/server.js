@@ -20,16 +20,19 @@ dotenv.config();
 connectDB();
 
 const app = express();
-
 const allowedOrigins = [
-  "https://kisan-setu-c6yf.vercel.app",
+  "http://localhost:5173",
   "https://kisan-setu-c6yf.vercel.app",
 ];
 
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
+      if (
+        !origin ||
+        allowedOrigins.includes(origin) ||
+        origin.endsWith(".vercel.app")
+      ) {
         callback(null, true);
       } else {
         callback(new Error("Not allowed by CORS"));
