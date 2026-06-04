@@ -288,7 +288,8 @@ Frontend
 env
 VITE_API_URL=3
 
-
+# Live frontend : https://kisan-setu-c6yf.vercel.app/
+# Live Backend : https://kisansetu-backend-5oag.onrender.com
 
 # 📸 Project Screenshots
 
