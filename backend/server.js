@@ -22,7 +22,7 @@ connectDB();
 const app = express();
 
 const allowedOrigins = [
-  "http://localhost:5173",
+  "https://kisan-setu-c6yf.vercel.app",
   "https://kisan-setu-c6yf.vercel.app",
 ];
 
