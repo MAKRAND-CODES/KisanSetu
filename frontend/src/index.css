@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #f7faf5;
+  color: #172414;
+}
+
+.auth-bg {
+  background:
+    linear-gradient(rgba(10, 35, 18, 0.62), rgba(10, 35, 18, 0.72)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
